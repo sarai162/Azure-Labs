@@ -31,8 +31,6 @@ apt install nginx -y
 systemctl start nginx
 systemctl enable nginx
 ```
-  
-Review the settings and launch the instance.  
-Wait until the instance is running.  
+
 Open the instance’s public IP in a browser to confirm the web server is accessible.  
 
