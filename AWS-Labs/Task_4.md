@@ -12,29 +12,27 @@ Security Group: Ensure that the instance allows HTTP traffic on port 80 from the
 
 # Solution
 
-```
 Open the EC2 service in the AWS Console.
-
 Click Launch instance.
-
 Select an appropriate Linux AMI.
-
 Choose an instance type.
-
 Configure the network and security group.
-
 Add an inbound rule to allow HTTP traffic on port 80 from the internet.
-
 Add a user data script that:
 updates the package list
 installs Nginx
 starts the Nginx service
 enables it on boot
 
+```
+#!/bin/bash
+apt update -y
+apt install nginx -y
+systemctl start nginx
+systemctl enable nginx
+```
+
 Review the settings and launch the instance.
-
 Wait until the instance is running.
-
 Open the instance’s public IP in a browser to confirm the web server is accessible.
 
-```
