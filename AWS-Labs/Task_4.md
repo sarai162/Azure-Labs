@@ -12,8 +12,8 @@ Security Group: Ensure that the instance allows HTTP traffic on port 80 from the
 
 # Solution
 
-Open the EC2 service in the AWS Console.\b
-Click Launch instance.\b
+Open the EC2 service in the AWS Console.  
+Click Launch instance.   
 Select an appropriate Linux AMI.
 Choose an instance type.
 Configure the network and security group.
